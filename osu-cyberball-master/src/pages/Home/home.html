@@ -130,7 +130,7 @@
                         <button repeat.for="cpu of settings.computerPlayers"
                                 class="tablinks ${$index === activeCPUTab ? 'active' : ''}"
                                 click.delegate="activeCPUTab = $index">
-                            CPU ${$index + 1}
+                            Player ${$index+2}
                         </button>
                     </div>
                     <h2>
@@ -166,7 +166,7 @@
 
                         <div class="input">
                             <label>Throw Delay (ms) <span class="tooltip-icon h2-tooltip" click.delegate="showInfo('throwDelay')">?</span></label>
-                            <input type="number" value.bind="cpu.throwDelay" placeholder="Enter delay in milliseconds" class="ms-input" input.delegate="updateUrl()"/>
+                            <input type="number" value.bind="cpu.throwDelay"  class="ms-input" input.delegate="updateUrl()"/>
                         </div>
 
                         <div class="input">
@@ -328,9 +328,16 @@
                         <input type="checkbox" checked.bind="settings.useSchedule" input.delegate="updateUrl()"/>
                     </div>
 
-                    <div class="input" if.bind="settings.useSchedule">
-                        <label>Schedule</label>
-                        <textarea value.bind="settings.scheduleArray & updateTrigger:'blur'"></textarea>
+<!--                    <div class="input" if.bind="settings.useSchedule">-->
+<!--                        <label>Schedule</label>-->
+<!--                        <textarea value.bind="settings.scheduleArray & updateTrigger:'blur'"></textarea>-->
+<!--                    </div>-->
+
+                    <div if.bind="settings.useSchedule">
+                        <div repeat.for="i of numberOfPlayers">
+                            <label>Player ${i + 1}:</label>
+                            <input type="text" value.bind="playerSchedules[i]" change.trigger="playerScheduleChanged(i, playerSchedules[i])">
+                        </div>
                     </div>
 
                     <div class="input">

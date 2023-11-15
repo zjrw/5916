@@ -15,8 +15,11 @@ export class SettingsModel {
     useSchedule: boolean = false;
     changeColor: boolean = false;
     scheduleHonorsThrowCount: boolean = false;
-    schedule: Map<number, Array<number>>; 
+    schedule?: Map<number, Array<number>>;
     scheduleText:string;
+
+
+    scheduleArray?: string; // Make schedule optional
 
     // Graphics
     baseUrl: string = './assets';
@@ -26,6 +29,18 @@ export class SettingsModel {
 
     portraitHeight: number = 75;
     portraitPadding: number = 10;
+
+    updateSchedule(useSchedule: boolean) {
+        if (useSchedule) {
+            // Initialize schedule if it doesn't exist
+            this.schedule = this.schedule || new Map<number, Array<number>>();
+            this.scheduleText = "";
+        } else {
+            // Remove the schedule if useSchedule is false
+            delete this.scheduleText;
+            delete this.schedule;
+        }
+    }
 
     get hasPortraits(): boolean | string {
         return this.player.portrait || this.computerPlayers.some(cpu => cpu.portrait);

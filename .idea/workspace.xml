@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1df60617-51f0-4cdd-ba34-15f42a967405" name="Changes" comment="SAVING">
+    <list default="true" id="1df60617-51f0-4cdd-ba34-15f42a967405" name="Changes" comment="added player name instead of just saying cpu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/scripts/app-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/scripts/app-bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/scripts/app-bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/scripts/app-bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/scripts/vendor-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/scripts/vendor-bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/scripts/vendor-bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/scripts/vendor-bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/src/models/settings-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/src/models/settings-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/src/pages/Home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/src/pages/Home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/src/pages/Home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/src/pages/Home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/src/pages/Home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/src/pages/Home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/src/scenes/cyberball.ts" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/src/scenes/cyberball.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osu-cyberball-master/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/osu-cyberball-master/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +50,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rework-ui" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,27 +74,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2VZq6RW1ki8mxTKcywD5zTRxgQR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/alexshaheen/IdeaProjects/5916-Group3/osu-cyberball-master/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Alex__fix__scheduler",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/alex/IdeaProjects/5916-Group3/osu-cyberball-master/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/osu-cyberball-master/assets" />
@@ -129,6 +142,7 @@
       <workItem from="1698184671068" duration="15499000" />
       <workItem from="1698678467270" duration="1774000" />
       <workItem from="1698793896986" duration="10992000" />
+      <workItem from="1700027643750" duration="4706000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -266,6 +280,7 @@
     <MESSAGE value="done takss such as save to file, add ms to times, made it so you can set a duration for the game" />
     <MESSAGE value="done tasks such as save to file, add ms to times, made it so you can set a duration for the game" />
     <MESSAGE value="SAVING" />
-    <option name="LAST_COMMIT_MESSAGE" value="SAVING" />
+    <MESSAGE value="added player name instead of just saying cpu" />
+    <option name="LAST_COMMIT_MESSAGE" value="added player name instead of just saying cpu" />
   </component>
 </project>

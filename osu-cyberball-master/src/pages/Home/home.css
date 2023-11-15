@@ -364,3 +364,10 @@ iframe {
     justify-content: space-between;
     margin-top: 20px;
 }
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: block; /* or inline-block, depending on your layout */
+}

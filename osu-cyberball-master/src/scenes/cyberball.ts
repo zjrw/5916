@@ -46,7 +46,6 @@ export class CyberballScene extends Phaser.Scene {
 
     constructor(settings: SettingsModel) {
         super({});
-
         this.settings = settings;
 
         if(this.settings.useSchedule){
